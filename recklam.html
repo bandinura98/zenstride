@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trapstar Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Oswald', sans-serif;
+      background: #0a0a0a;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+    }
+
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    h1 span {
+      color: crimson;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    section {
+      padding: 80px 60px;
+      border-top: 1px solid #1f1f1f;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p {
+      max-width: 700px;
+      opacity: 0.85;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #111;
+      padding: 25px;
+      border-left: 4px solid crimson;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(220, 20, 60, 0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    footer {
+      padding: 40px 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.6;
+      border-top: 1px solid #1f1f1f;
+    }
+
+    a {
+      color: crimson;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      header, section, footer {
+        padding: 40px 25px;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TRAP<span>STAR</span></h1>
+    <div class="tagline">
+      Designer • Developer • Built from the underground
+    </div>
+  </header>
+
+  <section>
+    <h2>Hakkımızda</h2>
+    <p>
+      Kendi yolumu kendim çizdim. Kestirme yok.
+Minimal, etkili ve hızlı dijital çözümler üretiyorum.
+500 TL’ye yazılım — ihtiyacın olan, fazlası değil.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <div class="card">
+  <h3>Midnight System</h3>
+  <p>Dark (karanlık) kullanıcı arayüzü konsepti. Hızlı ve şık tasarım.</p>
+</div>
+<div class="card">
+  <h3>Portfolio Ledger</h3>
+  <p>Minimal portfolyo tasarımı, okunaklı ve etkili tipografi.</p>
+</div>
+<div class="card">
+  <h3>Blackout</h3>
+  <p>Saf HTML/CSS ile hazırlanmış deneysel açılış sayfası.</p>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="#">you@email.com</a><br />
+      Instagram: <a href="#">@trapstar</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Trapstar. No imitation.
+  </footer>
+
+</body>
+</html>
